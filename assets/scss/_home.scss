@@ -1,0 +1,144 @@
+.main {
+  &-banner_top {
+    position: relative;
+    background-image: url("../images/main-banner_top_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+    &--content {
+      color: white;
+      // position: absolute;
+      // top: 70px;
+      & > * {
+        font-weight: 400;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      h2 {
+        font-size: 28px;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: #fff;
+          height: 3px;
+          width: 90px;
+          bottom: -7px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+      h6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+      button {
+        font-size: 12px;
+        background-color: #fff;
+        color: #000;
+        padding: 5px 20px;
+      }
+    }
+  }
+  &-ourmenu,
+  &-reservation {
+    padding: 40px 0px;
+    &-text {
+      .title {
+        font-size: 30px;
+        color: #000;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: $main-color;
+          height: 3px;
+          width: 142px;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          margin: 10px auto;
+        }
+      }
+      .content {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: #000;
+        font-size: 12px;
+      }
+      .button {
+        width: 200px;
+      }
+    }
+    &-image {
+      margin-bottom: 40px;
+    }
+  }
+  &-map {
+    margin-bottom: 40px;
+    iframe {
+      height: 160px !important;
+      width: 100% !important;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .main {
+    &-banner_top {
+      background-image: url("../images/main-banner_top_pc.png");
+      height: 100vh;
+
+      &--content {
+        h1 {
+          font-size: 56px;
+        }
+        h2 {
+          font-size: 44px;
+          &::after {
+            width: 200px;
+          }
+        }
+        h6 {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-size: 28px;
+        }
+        button {
+          font-size: 28px;
+          padding: 10px 40px;
+        }
+      }
+    }
+    &-ourmenu,
+    &-reservation {
+      padding: 60px 0px;
+      &-text {
+        .title {
+          font-size: 36px;
+          &::after {
+            width: 158px;
+            margin: 10px auto;
+          }
+        }
+        .content {
+          margin-top: 25px;
+          margin-bottom: 60px;
+          font-size: 14px;
+        }
+      }
+      &-image {
+        margin-bottom: 0;
+      }
+    }
+    &-map {
+      margin-bottom: 60px;
+      iframe {
+        height: 500px !important;
+      }
+    }
+  }
+}

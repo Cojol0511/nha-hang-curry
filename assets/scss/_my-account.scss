@@ -1,0 +1,111 @@
+.woocommerce-account {
+  #wrapper {
+    .page-content {
+      min-height: calc(100vh - 300px);
+      h2 {
+        text-transform: uppercase;
+      }
+      .woocommerce-form-login {
+        .woocommerce-form-row {
+          .woocommerce-Input--text {
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(165, 165, 165);
+            &:focus {
+              border: 1px solid #333;
+            }
+          }
+        }
+        .form-row {
+          .woocommerce-form-login__submit {
+            background: $main-hover;
+            color: #fff;
+            &:hover {
+              background: #333;
+              color: #fff;
+            }
+          }
+        }
+        a {
+          color: #333;
+        }
+      }
+    }
+    .woocommerce-ResetPassword {
+      .woocommerce-Input {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid rgb(165, 165, 165);
+        &:focus {
+          border: 1px solid #333;
+        }
+      }
+      .woocommerce-Button {
+        background: $main-hover;
+        color: #fff;
+        &:hover {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation {
+      ul {
+        list-style: none;
+        margin-bottom: 1rem;
+        li {
+          border: 1px solid $main-hover;
+          border-bottom: none;
+          padding: 5px;
+          a {
+            color: #333;
+            font-weight: 500;
+          }
+        }
+        li:last-child {
+          border-bottom: 1px solid $main-hover;
+        }
+      }
+    }
+    .woocommerce-MyAccount-content {
+      p {
+        a {
+          color: $main-hover;
+          font-weight: bold;
+        }
+      }
+    }
+    .shop_table {
+      .woocommerce-orders-table__cell-order-actions {
+        .woocommerce-button {
+          background: $main-hover;
+          color: white;
+          &:hover {
+            background: #333;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .woocommerce-form-register {
+      .woocommerce-form-row {
+        .woocommerce-Input--text {
+          padding: 5px;
+          border-radius: 10px;
+          border: 1px solid rgb(165, 165, 165);
+          &:focus {
+            border: 1px solid #333;
+          }
+        }
+        .woocommerce-form-register__submit {
+          background: $main-hover;
+          color: white;
+          &:hover {
+            background: #333;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

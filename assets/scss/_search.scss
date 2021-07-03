@@ -1,0 +1,26 @@
+.search {
+  ul.search-products {
+    li {
+      .woocommerce-loop-product__title {
+        color: green;
+      }
+      // a.link {
+      //   display: flex;
+      //   margin: 1rem;
+      //   border-bottom: 2px solid $main-hover;
+      //   padding-bottom: 15px;
+      // }
+      .category:hover {
+        color: #f9ed24;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .content {
+        width: calc(100% - 110px);
+      }
+    }
+  }
+}

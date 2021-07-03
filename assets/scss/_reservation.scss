@@ -1,0 +1,166 @@
+.reservation {
+  .main-banner_top {
+    background-image: url("../images/reservation_banner_top_mobile.png");
+  }
+  &-active {
+    &--online,
+    &--support {
+      padding: 40px 0px 20px;
+      border-bottom: 1px solid #000000;
+
+      .title {
+        font-size: 24px;
+        color: #000;
+      }
+      .content {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: #000;
+        font-size: 12px;
+      }
+      form {
+        input {
+          width: 150px;
+          margin-bottom: 16px;
+          border: 1px solid #8f8f8f;
+          border-radius: 10px;
+          padding: 10px;
+        }
+        select {
+          width: 150px;
+          text-align-last: center;
+          margin-bottom: 16px;
+          border: 1px solid #8f8f8f;
+          border-radius: 10px;
+          padding: 10px 20px;
+        }
+        i {
+          font-size: 30px;
+          color: $main-color;
+          margin-right: 20px;
+          height: 40px;
+          width: 40px;
+        }
+        div.row > div:nth-child(7) {
+          flex-wrap: wrap;
+          margin-top: 40px;
+          .wpcf7-submit {
+            margin-bottom: 0px;
+            border: none;
+            border-radius: 10px;
+            background-color: $main-color;
+            color: #fff;
+            padding: 10px 0px;
+            width: 210px;
+            &:hover {
+              background-color: $main-hover;
+              color: #fff;
+            }
+          }
+          span {
+            width: 100%;
+          }
+        }
+        .wpcf7-response-output {
+          margin: 0;
+        }
+        .wpcf7-not-valid-tip {
+          margin: -15px 0 15px;
+        }
+      }
+    }
+  }
+  &-champagne {
+    padding: 40px 0;
+    color: #fff;
+    &--content {
+      background-color: $main-color;
+      padding: 20px;
+      margin: 0 18px;
+      .title {
+        font-size: 18px;
+        margin-bottom: 1rem;
+      }
+      .content {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .reservation {
+    .main-banner_top {
+      background-image: url("../images/reservation_banner_top_pc.png");
+    }
+    &-active {
+      &--online,
+      &--support {
+        padding: 60px 0 40px;
+        .title {
+          font-size: 36px;
+        }
+        .content {
+          margin-bottom: 60px;
+          font-size: 14px;
+        }
+        form {
+          input {
+            width: 200px;
+            margin-bottom: 30px;
+            padding: 15px 20px;
+          }
+          select {
+            width: 200px;
+            margin-bottom: 30px;
+            padding: 15px 20px;
+          }
+          i {
+            width: auto;
+            height: auto;
+          }
+
+          div.row > div {
+            flex-wrap: wrap;
+            i {
+              flex-basis: 100%;
+              font-size: 60px;
+              margin: 15px 0 15px;
+            }
+          }
+          div.row > div:nth-child(7) {
+            margin-top: 60px;
+            .wpcf7-submit {
+              margin-bottom: 0px;
+              padding: 10px 0px;
+              width: 200px;
+            }
+            span {
+              width: 100%;
+            }
+          }
+          .wpcf7-response-output {
+            margin: 0;
+          }
+          .wpcf7-not-valid-tip {
+            position: absolute;
+          }
+        }
+      }
+    }
+    &-champagne {
+      padding: 60px 0px;
+      color: #fff;
+      &--content {
+        background-color: $main-color;
+        margin: 0 60px;
+        .title {
+          font-size: 24px;
+          margin-bottom: 1rem;
+        }
+        .content {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

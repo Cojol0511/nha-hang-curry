@@ -1,0 +1,95 @@
+.woocommerce-form-coupon-toggle {
+  .woocommerce-info {
+    border-top-color: black;
+
+    &::before {
+      color: black;
+    }
+    .showcoupon {
+      color: $main-color;
+    }
+  }
+}
+
+.checkout_coupon {
+  .form-row-first {
+    input[name="coupon_code"] {
+      padding: 5px;
+    }
+  }
+  .form-row-last {
+    button[name="apply_coupon"] {
+      background: $main-color;
+      color: #fff;
+      &:hover {
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+.woocommerce-checkout {
+  #customer_details {
+    .clear {
+      .woocommerce-billing-fields {
+        h3 {
+          text-transform: uppercase;
+        }
+        .woocommerce-billing-fields__field-wrapper {
+          .input-text {
+            border: 1px solid rgb(165, 165, 165);
+            padding: 5px;
+            border-radius: 5px;
+            &:hover {
+              border: 1px solid #333;
+            }
+          }
+        }
+      }
+      .woocommerce-additional-fields {
+        h3 {
+          text-transform: uppercase;
+        }
+        .woocommerce-additional-fields__field-wrapper {
+          .input-text {
+            border: 1px solid rgb(165, 165, 165);
+            padding: 5px;
+            border-radius: 5px;
+            &:hover {
+              border: 1px solid #333;
+            }
+          }
+        }
+      }
+      #place_order {
+        background: $main-color;
+        color: #fff;
+        &:hover {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .has-border {
+    .checkout-sidebar {
+      h3 {
+        text-transform: uppercase;
+      }
+      .woocommerce-checkout-review-order {
+        #payment {
+          .place-order {
+            button[name="woocommerce_checkout_place_order"] {
+              background: $main-color;
+              color: #fff;
+              &:hover {
+                background: #333;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
