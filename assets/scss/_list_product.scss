@@ -7,6 +7,7 @@ ul.products {
       }
     }
     .item-product {
+      position: relative;
       text-align: center;
       background-color: #ddffd3;
       padding: 10px !important;
@@ -23,6 +24,9 @@ ul.products {
         display: flex;
         justify-content: center;
         align-items: center;
+        top: 22% !important;
+        right: 5% !important;
+        left: auto;
       }
       .woocommerce-loop-product {
         &__title {
@@ -119,6 +123,10 @@ ul.products {
       margin-bottom: 0 !important;
       padding: 10px !important;
       .item-product {
+        .onsale {
+          top: 0 !important;
+          right: 0 !important;
+        }
         .woocommerce-loop-product {
           &__title {
             font-size: 1.2rem !important;

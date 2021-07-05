@@ -65,7 +65,7 @@ add_action('woocommerce_shop_loop_item_title', 'addOpenDivInfor', 11);
 function addDescriptionOfProductInList()
 {
 
-    echo '<div class="product__description">' . get_the_content() . '</div>';
+    echo '<div class="product__description">' . get_the_excerpt() . '</div>';
 }
 add_action('woocommerce_shop_loop_item_title', 'addDescriptionOfProductInList', 12);
 //add IMG

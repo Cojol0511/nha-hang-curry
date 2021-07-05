@@ -32,7 +32,7 @@ get_header('shop');
 
 ?>
 
-<main id="main" class="main reservation">
+<main id="main" class="main online_order">
   <section class="main-banner_top">
     <div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center main-banner_top--content">
       <!-- <h1>Make a</h1> -->
@@ -68,25 +68,21 @@ get_header('shop');
             // do_action('woocommerce_before_shop_loop');
 
             woocommerce_product_loop_start();
-          ?>
-            <div class="row">
-              <?php
-              if (wc_get_loop_prop('total')) {
-                while (have_posts()) {
 
-                  the_post();
+            if (wc_get_loop_prop('total')) {
+              while (have_posts()) {
 
-                  /**
-                   * Hook: woocommerce_shop_loop.
-                   */
-                  do_action('woocommerce_shop_loop');
+                the_post();
 
-                  wc_get_template_part('content', 'product');
-                }
+                /**
+                 * Hook: woocommerce_shop_loop.
+                 */
+                do_action('woocommerce_shop_loop');
+
+                wc_get_template_part('content', 'product');
               }
-              ?>
-            </div>
-          <?php
+            }
+
 
             woocommerce_product_loop_end();
 

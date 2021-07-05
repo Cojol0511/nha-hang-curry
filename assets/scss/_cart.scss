@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 991px) {
   .woocommerce {
     .woocommerce-cart-form {
       .shop_table {
@@ -149,13 +149,11 @@
           .actions {
             .coupon {
               .input-text {
-                position: relative;
-                left: 12px;
-                width: 140px !important;
+                width: 50% !important;
               }
               button[name="apply_coupon"] {
-                font-size: 15.5px;
-                padding: 11px;
+                width: 50% !important;
+                padding: 0;
               }
             }
           }
@@ -164,101 +162,121 @@
     }
   }
 }
-@media (max-width: 360px) {
-  .woocommerce {
-    .woocommerce-cart-form {
-      .shop_table {
-        tbody {
-          .actions {
-            .coupon {
-              .input-text {
-                position: relative;
-                width: 162px;
-              }
-              button[name="apply_coupon"] {
-                font-size: 15.5px;
-                padding: 11px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 361px) and (max-width: 375.99px) {
-  .woocommerce {
-    .woocommerce-cart-form {
-      .shop_table {
-        tbody {
-          .actions {
-            .coupon {
-              .input-text {
-                position: relative;
-                width: 170px;
-                padding: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 376px) and (max-width: 414.99px) {
-  .woocommerce {
-    .woocommerce-cart-form {
-      .shop_table {
-        tbody {
-          .actions {
-            .coupon {
-              .input-text {
-                position: relative;
-                width: 190px;
-                padding: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 415px) and (max-width: 767px) {
-  .woocommerce {
-    .woocommerce-cart-form {
-      .shop_table {
-        tbody {
-          .actions {
-            .coupon {
-              .input-text {
-                position: relative;
-                width: 230px;
-                padding: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 768px) {
-  .woocommerce {
-    .woocommerce-cart-form {
-      .shop_table {
-        tbody {
-          .actions {
-            .coupon {
-              .input-text {
-                position: relative;
-                width: 349px !important;
-                padding: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
+// @media (max-width: 360px) {
+//   .woocommerce {
+//     .woocommerce-cart-form {
+//       .shop_table {
+//         tbody {
+//           .actions {
+//             .coupon {
+//               .input-text {
+//                 position: relative;
+//                 width: 162px;
+//               }
+//               button[name="apply_coupon"] {
+//                 font-size: 15.5px;
+//                 padding: 11px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 361px) and (max-width: 375.99px) {
+//   .woocommerce {
+//     .woocommerce-cart-form {
+//       .shop_table {
+//         tbody {
+//           .actions {
+//             .coupon {
+//               .input-text {
+//                 position: relative;
+//                 width: 170px;
+//                 padding: 5px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 376px) and (max-width: 414.99px) {
+//   .woocommerce {
+//     .woocommerce-cart-form {
+//       .shop_table {
+//         tbody {
+//           .actions {
+//             .coupon {
+//               .input-text {
+//                 position: relative;
+//                 width: 190px;
+//                 padding: 5px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 415px) and (max-width: 767px) {
+//   .woocommerce {
+//     .woocommerce-cart-form {
+//       .shop_table {
+//         tbody {
+//           .actions {
+//             .coupon {
+//               .input-text {
+//                 position: relative;
+//                 width: 230px;
+//                 padding: 5px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 768px) {
+//   .woocommerce {
+//     .woocommerce-cart-form {
+//       .shop_table {
+//         tbody {
+//           .actions {
+//             .coupon {
+//               .input-text {
+//                 position: relative;
+//                 width: 349px !important;
+//                 padding: 5px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+#wrapper
+  > div.page-content.w-100.float-left.mt-5.mb-3
+  > div
+  > div
+  > p.return-to-shop
+  > a {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  border-radius: 10px;
+  background-color: $main-color;
+  color: #fff;
+  padding: 10px;
+  &:hover {
+    background-color: $main-hover;
+    color: #fff;
   }
 }

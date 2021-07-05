@@ -58,11 +58,11 @@
 							<a href="mailto:<?php echo get_theme_mod("html_email") ?>"><i style="color: #ea4335" class="fab fa-google"></i></a>
 						</div>
 					</div>
-					<div class="col-12 mt-4 justify-content-center align-item-center d-flex">
-						<p>© Copyright Enzu Media</p>
-					</div>
 				</div>
 			</div>
+		</section>
+		<section class="footer-coppy text-center py-2 py-md-3">
+			© Copyright Enzu Media
 		</section>
 	</footer>
 

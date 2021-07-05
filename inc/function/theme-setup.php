@@ -108,6 +108,7 @@ function wph_scripts()
     $uri     = get_template_directory_uri();
     //css
     wp_enqueue_style('mmenujs', $uri . '/assets/libs/mmenujs/css/mmenu.min.css', array(), false, 'all');
+    wp_enqueue_style('mburger', $uri . '/assets/libs/mmenujs/css/mburger.css', array(), false, 'all');
     wp_enqueue_style('fontawesome', $uri . '/assets/libs/font-awesome/all.min.css', array(), false, 'all');
     wp_enqueue_style('style', $uri . '/assets/css/style.css?v=' . time(), array(), false, 'all');
 

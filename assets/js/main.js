@@ -12,7 +12,7 @@ jQuery(function ($) {
     if (width < 992) {
       $("#mobile_menu").mmenu({
         // slidingSubmenus: false,
-        extensions: ["border-full", "pagedim-black", "position-front"],
+        extensions: ["border-full", "position-front", "position-right"],
         wrappers: ["wordpress"],
         navbar: {
           title: "Menü",

@@ -32,9 +32,13 @@
         <div class="container">
           <div class="row gx-1 align-items-center">
 
-            <a id="mobile-menu-button" class="col-2 d-lg-none" href="#mobile_menu">
-              <i class="far fa-bars"></i>
-            </a>
+            <div class="col-2 d-lg-none header-main--nav">
+              <a id="mobile-menu-button" class="mburger" href="#mobile_menu">
+                <b></b>
+                <b></b>
+                <b></b>
+              </a>
+            </div>
 
             <div class="
                 col-8 col-lg-2

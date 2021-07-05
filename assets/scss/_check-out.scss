@@ -6,7 +6,7 @@
       color: black;
     }
     .showcoupon {
-      color: $main-color;
+      color: $main-hover;
     }
   }
 }
@@ -80,10 +80,17 @@
         #payment {
           .place-order {
             button[name="woocommerce_checkout_place_order"] {
-              background: $main-color;
+              -webkit-transition: all 0.25s;
+              -moz-transition: all 0.25s;
+              -ms-transition: all 0.25s;
+              -o-transition: all 0.25s;
+              transition: all 0.25s;
+              border-radius: 10px;
+              background-color: $main-color;
               color: #fff;
+              padding: 10px;
               &:hover {
-                background: #333;
+                background-color: $main-hover;
                 color: #fff;
               }
             }
