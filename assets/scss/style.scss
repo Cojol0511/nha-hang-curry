@@ -212,6 +212,7 @@ button {
         a {
           color: white;
           font-size: 16px;
+          text-align: center;
         }
         &:hover {
           i,
@@ -356,6 +357,9 @@ button {
         justify-content: start;
       }
       &--address {
+        li a {
+          text-align: left;
+        }
       }
       &--links {
         margin: 0;
