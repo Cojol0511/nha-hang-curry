@@ -137,6 +137,7 @@ ul.products {
 
             a:first-child {
               margin-bottom: 0;
+              width: 40%;
               img {
                 margin-bottom: 0;
               }
@@ -145,7 +146,7 @@ ul.products {
               display: none;
             }
             img {
-              height: 160px !important;
+              height: 100% !important;
               border-radius: 10px;
             }
             &-text {
